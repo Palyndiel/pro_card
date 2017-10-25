@@ -1,0 +1,9 @@
+menu:
+    home: Home
+    resume: Resume
+    portfolio: Portfolio
+    contact: Contact
+
+master:
+    name: Maxime
+    family: Minot

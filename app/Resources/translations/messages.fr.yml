@@ -1,0 +1,26 @@
+menu:
+    home: Accueil
+    resume: CV
+    portfolio: Portfolio
+    contact: Contact
+
+master:
+    name: Maxime
+    family: Minot
+    skill:
+        java: Développeur JavaEE
+        php: Développeur back-end PHP
+
+info:
+    age: Âge
+    residence: Pays
+    address: Adresse
+    email: E-mail
+    phone: Téléphone
+
+about:
+    about: A propos de
+    me: moi
+
+download:
+    resume: Télécharger le CV
