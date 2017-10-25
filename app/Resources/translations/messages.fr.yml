@@ -24,3 +24,8 @@ about:
 
 download:
     resume: Télécharger le CV
+
+resume:
+    title: CV
+    education: Formation
+    experience: Projets
