@@ -15,12 +15,4 @@ class CoreController extends Controller
     {
         return $this->render('default/index.html.twig');
     }
-
-    /**
-     * @Route("/resume", name="resumePage")
-     */
-    public function resumeAction(Request $request)
-    {
-        return $this->render('default/resume.html.twig');
-    }
 }

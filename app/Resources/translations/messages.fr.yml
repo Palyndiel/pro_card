@@ -29,3 +29,10 @@ resume:
     title: CV
     education: Formation
     experience: Projets
+
+portfolio:
+    title: Portfolio
+    all: Tout
+    video: Vidéo
+    site: Site web
+    certificat: Certificat
