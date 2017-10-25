@@ -7,3 +7,53 @@ menu:
 master:
     name: Maxime
     family: Minot
+    skill:
+        java: JavaEE Developer
+        php: Back-end PHP developer
+
+info:
+    age: Age
+    residence: Residence
+    address: Address
+    email: E-mail
+    phone: Phone
+
+about:
+    about: About
+    me: me
+
+download:
+    resume: Download resume
+
+resume:
+    title: Resume
+    education: Education
+    experience: Experience
+    coding: Coding
+    technology: Technology
+    skills: skills
+
+portfolio:
+    title: Portfolio
+    all: All
+    video: Video
+    site: Web site
+    certificat: Certificat
+
+contact:
+    title: Contact
+    getin: Get in
+    touch: touch
+    contact: Contact
+    form: form
+
+form:
+    error:
+        name: Name is required.
+        email: A valid e-mail address is required.
+        message: Please fill in the fild.
+    label:
+        name: Name
+        email: E-mail
+        message: Message
+    send: Send message

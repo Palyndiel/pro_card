@@ -51,7 +51,7 @@ form:
     error:
         name: Le nom est requis.
         email: Une adresse e-mail valide est requise.
-        message: Merci de rensigner un message.
+        message: Merci de renseigner un message.
     label:
         name: Nom
         email: Adresse e-mail
