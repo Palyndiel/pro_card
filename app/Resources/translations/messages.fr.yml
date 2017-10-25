@@ -28,7 +28,10 @@ download:
 resume:
     title: CV
     education: Formation
-    experience: Projets
+    experience: Expérience
+    coding: Langages
+    technology: Technologies
+    skills: connus
 
 portfolio:
     title: Portfolio
