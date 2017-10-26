@@ -57,3 +57,8 @@ form:
         email: Adresse e-mail
         message: Message
     send: envoyer
+    mess:
+        ok: Le mail a bien été envoyé. Merci à vous ! Je vous réponds dans les plus brefs délais.
+        error: Il y a eu un problème lors de l'envoi du mail. Merci de retenter plus tard.
+        robot: La vérification a échoué. Merci de réessayer.
+        captcha: Merci de cliquer sur le CAPATCHA.

@@ -57,3 +57,8 @@ form:
         email: E-mail
         message: Message
     send: Send message
+    mess:
+        ok: Contact form successfully submitted. Thank you, I will get back to you soon!
+        error: There was an error while submitting the form. Please try again later
+        robot: Robot verification failed, please try again.
+        captcha: Please click on the reCAPTCHA box.

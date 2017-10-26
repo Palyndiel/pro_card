@@ -52,7 +52,7 @@
 
         $('#contact-form').on('submit', function (e) {
             if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
+                var url=Routing.generate('formContact');
 
                 $.ajax({
                     type: "POST",
@@ -68,6 +68,10 @@
                             $('#contact-form').find('.messages').html(alertBox);
                             $('#contact-form')[0].reset();
                         }
+                    },
+                    error: function(resultat, statut, erreur)
+                    {
+                        alert(resultat + "\n" + statut + "\n" + erreur);
                     }
                 });
                 return false;
