@@ -11,7 +11,7 @@ use Symfony\Component\Translation\Translator;
 class CoreController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/{_locale}/", requirements={"_locale": "en|fr"}, defaults={"_locale" = "fr"}, name="homepage")
      */
     public function indexAction(Request $request)
     {
