@@ -10,6 +10,7 @@ master:
     skill:
         java: Développeur JavaEE
         php: Développeur back-end PHP
+    desc: Bonjour, je m'appelle Maxime Minot. Je suis un jeune ingénieur diplomé en électronique et technologies numériques. J'ai 6 mois d'expérience en développement Java EE et je crée des sites web avec Symfony sur mon temps libre.
 
 info:
     age: Âge
@@ -31,7 +32,26 @@ resume:
     experience: Expérience
     coding: Langages
     technology: Technologies
-    skills: connus
+    c_skills: connus
+    t_skills: connues
+    polytech:
+        title: Diplôme d'ingénieur en électronique et technologies numériques
+        desc: Formation alliant électronique et informatique. Les domaines abordés vont de la programmation de FPGA au codage en langage Java.
+    oc:
+        title: Développez des sites PHP professionnels
+        desc: Certificat de réussite de parcours sur la programmation orientée objet, le framework Symfony et les bonnes pratiques.
+    sncf:
+        title: Stage fin d'étude pour SNCF
+        desc: Stage effectué au sein de l'équipe OCTOPUS. Développement et maintenance d'une application en Java J2ee sous eclipse.
+    vod:
+        title: Application de vidéo à la demande sur casque de réalité virtuelle
+        desc: Projet scolaire effectué en binôme. Programmation d'un serveur sur Raspberry Pi et d'une application client en Android sur casque de réalité virtuelle.
+    oculus:
+        title: Application en réalité virtuelle pour Oculus Rift
+        desc: Stage de 3 mois effectué au Canada. Aide apportée à un doctorant sur son projet de recherche. Optimisation de l'application permettant de recréer une pièce préalablement scannée dans le casque de réalité virtuelle.
+    symfony:
+        title: Création de site web avec Symfony
+        desc: Développement et maintenance de différents sites web de façon professionnelle.
 
 portfolio:
     title: Portfolio
