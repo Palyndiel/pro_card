@@ -18,6 +18,8 @@ info:
     address: Address
     email: E-mail
     phone: Phone
+    job: Job
+    alten: Consultant at Alten
 
 about:
     about: About
@@ -35,11 +37,18 @@ resume:
     c_skills: skills
     t_skills: skills
     polytech:
-            title: Engineer's degree in electronics and digital technologies
-            desc: Training combining electronics and IT. The areas covered range from FPGA programming to Java coding.
+        title: Engineer's degree in electronics and digital technologies
+        desc: Training combining electronics and IT. The areas covered range from FPGA programming to Java coding.
+    python:
+        title: Initiation to Python
+    angular:
+        title: Initiation to AngularJs
     oc:
          title: How to develop professional PHP websites
          desc: Success' certificate for a course on object-oriented programming, Symfony framework and best practices.
+    alten:
+        title: Consultant
+        desc: In search of a first mission.
     sncf:
         title: Internship for SNCF
         desc: Internship within the OCTOPUS team. Development and maintenance of an application in JAVA J2EE with eclipse.

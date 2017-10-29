@@ -18,6 +18,8 @@ info:
     address: Adresse
     email: E-mail
     phone: Téléphone
+    job: Travail
+    alten: Consultant chez Alten
 
 about:
     about: A propos de
@@ -37,9 +39,16 @@ resume:
     polytech:
         title: Diplôme d'ingénieur en électronique et technologies numériques
         desc: Formation alliant électronique et informatique. Les domaines abordés vont de la programmation de FPGA au codage en langage Java.
+    python:
+        title: Initiation au Python
+    angular:
+        title: Initiation à AngularJs
     oc:
         title: Développez des sites PHP professionnels
         desc: Certificat de réussite de parcours sur la programmation orientée objet, le framework Symfony et les bonnes pratiques.
+    alten:
+        title: Consultant
+        desc: En recherche d'une première mission.
     sncf:
         title: Stage fin d'étude pour SNCF
         desc: Stage effectué au sein de l'équipe OCTOPUS. Développement et maintenance d'une application en Java J2ee sous eclipse.
