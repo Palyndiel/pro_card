@@ -14,39 +14,16 @@
                             </div>
 
                             <div class="timeline">
-                                <!-- Education 1 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.polytech.title'|trans }}</h4>
-                                    <span class="item-period">2017</span>
-                                    <span class="item-small">Polytech'Nantes</span>
-                                    <p class="item-description">{{ 'resume.polytech.desc'|trans }}</p>
-                                </div>
-                                <!-- / Education 1 -->
-
-                                <!-- Education 3 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.python.title'|trans }}</h4>
-                                    <span class="item-period">2017</span>
-                                    <span class="item-small">CodeSchool</span>
-                                </div>
-                                <!-- / Education 3 -->
-
-                                <!-- Education 4 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.angular.title'|trans }}</h4>
-                                    <span class="item-period">2017</span>
-                                    <span class="item-small">CodeSchool</span>
-                                </div>
-                                <!-- / Education 4 -->
-
-                                <!-- Education 2 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.oc.title'|trans }}</h4>
-                                    <span class="item-period">2016</span>
-                                    <span class="item-small">OpenClassrooms</span>
-                                    <p class="item-description">{{ 'resume.oc.desc'|trans }}</p>
-                                </div>
-                                <!-- / Education 2 -->
+                                {% for experience in listExperiences %}
+                                    {% if experience.isEdu %}
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">{{ experience.title }}</h4>
+                                            <span class="item-period">{{ experience.length }}</span>
+                                            <span class="item-small">{{ experience.company }}</span>
+                                            <p class="item-description">{{ experience.description }}</p>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
                         </div>
                     </div>
@@ -58,50 +35,17 @@
                             </div>
 
                             <div class="timeline">
-                                <!-- Experience 0 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.alten.title'|trans }}</h4>
-                                    <span class="item-period">Oct 2017- aujourd'hui</span>
-                                    <span class="item-small">Alten</span>
-                                    <p class="item-description">{{ 'resume.alten.desc'|trans }}</p>
-                                </div>
-                                <!-- / Experience 0 -->
+                                {% for experience in listExperiences %}
+                                    {% if not experience.isEdu %}
+                                        <div class="timeline-item">
+                                            <h4 class="item-title">{{ experience.title }}</h4>
+                                            <span class="item-period">{{ experience.length }}</span>
+                                            <span class="item-small">{{ experience.company }}</span>
+                                            <p class="item-description">{{ experience.description }}</p>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
 
-                                <!-- Experience 1 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.sncf.title'|trans }}</h4>
-                                    <span class="item-period">Mars - Août 2017</span>
-                                    <span class="item-small">Sopra Steria</span>
-                                    <p class="item-description">{{ 'resume.sncf.desc'|trans }}</p>
-                                </div>
-                                <!-- / Experience 1 -->
-
-                                <!-- Experience 2 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.vod.title'|trans }}</h4>
-                                    <span class="item-period">Nov 2016 - Fév 2017 </span>
-                                    <span class="item-small">Polytech'Nantes</span>
-                                    <p class="item-description">{{ 'resume.vod.desc'|trans }}</p>
-                                </div>
-                                <!-- / Experience 2 -->
-
-                                <!-- Experience 3 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.oculus.title'|trans }}</h4>
-                                    <span class="item-period">Mai 2016 - Août 2016</span>
-                                    <span class="item-small">Université d'Ottawa, Canada</span>
-                                    <p class="item-description">{{ 'resume.oculus.desc'|trans }}</p>
-                                </div>
-                                <!-- / Experience 3 -->
-
-                                <!-- Experience 4 -->
-                                <div class="timeline-item">
-                                    <h4 class="item-title">{{ 'resume.symfony.title'|trans }}</h4>
-                                    <span class="item-period">Fev 2016 - aujourd'hui</span>
-                                    <span class="item-small">Privé</span>
-                                    <p class="item-description">{{ 'resume.symfony.desc'|trans }}</p>
-                                </div>
-                                <!-- / Experience 4 -->
                             </div>
                         </div>
                     </div>
@@ -115,25 +59,14 @@
                             </div>
 
                             <div class="skills-info">
-                                <h4>Symfony 2 et 3</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-10"></div>
-                                </div>
-
-                                <h4>Struts 2</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-6"></div>
-                                </div>
-
-                                <h4>Android</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-5"></div>
-                                </div>
-
-                                <h4>Hibernate</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-4"></div>
-                                </div>
+                                {% for skill in listSkills %}
+                                    {% if skill.isTech %}
+                                        <h4>{{ skill.name }}</h4>
+                                        <div class="skill-container">
+                                            <div class="skill-percentage skill-{{ skill.level }}"></div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
 
                         </div>
@@ -146,40 +79,14 @@
                             </div>
 
                             <div class="skills-info">
-                                <h4>PHP 5 et 7</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-10"></div>
-                                </div>
-
-                                <h4>HTML 5/CSS 3</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-9"></div>
-                                </div>
-
-                                <h4>JavaEE</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-8"></div>
-                                </div>
-
-                                <h4>Angular Js et 4</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-5"></div>
-                                </div>
-
-                                <h4>Python 2 et 3</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-5"></div>
-                                </div>
-
-                                <h4>SQL</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-9"></div>
-                                </div>
-
-                                <h4>C++</h4>
-                                <div class="skill-container">
-                                    <div class="skill-percentage skill-4"></div>
-                                </div>
+                                {% for skill in listSkills %}
+                                    {% if not skill.isTech %}
+                                        <h4>{{ skill.name }}</h4>
+                                        <div class="skill-container">
+                                            <div class="skill-percentage skill-{{ skill.level }}"></div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
                             </div>
 
                         </div>

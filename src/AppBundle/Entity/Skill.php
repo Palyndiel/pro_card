@@ -7,8 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Skill
  *
- * @ORM\Table(name="skills")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\SkillsRepository")
+ * @ORM\Table(name="skill")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\SkillRepository")
  */
 class Skill
 {
@@ -34,6 +34,29 @@ class Skill
      * @ORM\Column(name="level", type="integer")
      */
     private $level;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="isTech", type="boolean")
+     */
+    private $isTech;
+
+    /**
+     * @return bool
+     */
+    public function isTech()
+    {
+        return $this->isTech;
+    }
+
+    /**
+     * @param bool $isTech
+     */
+    public function setIsTech($isTech)
+    {
+        $this->isTech = $isTech;
+    }
 
 
     /**

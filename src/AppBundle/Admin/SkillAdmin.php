@@ -13,6 +13,7 @@ class SkillAdmin extends AbstractAdmin
     {
         $formMapper->add('name', 'text');
         $formMapper->add('level', 'integer');
+        $formMapper->add('isTech', 'checkbox', array('required' => false));
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

@@ -33,7 +33,7 @@
         "twig/twig": "@stable",
         "friendsofsymfony/jsrouting-bundle": "@stable",
         "sonata-project/admin-bundle": "3.x-dev",
-        "sonata-project/doctrine-orm-admin-bundle": "dev-master"
+        "sonata-project/doctrine-orm-admin-bundle": "3.x-dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
@@ -58,7 +58,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-            "php": "7.1"
+            "php": "5.6"
         }
     },
     "extra": {

@@ -16,7 +16,22 @@ class CoreController extends Controller
      */
     public function indexAction(Request $request)
     {
-        return $this->render('default/index.html.twig');
+        $listSkills = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('AppBundle:Skill')
+            ->findAll()
+        ;
+
+        $listExperiences = $this->getDoctrine()
+            ->getManager()
+            ->getRepository('AppBundle:Experience')
+            ->findAll()
+        ;
+
+        return $this->render('default/index.html.twig', array(
+            'listSkills' => $listSkills,
+            'listExperiences' => $listExperiences,
+        ));
     }
 
     /**

@@ -7,8 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Experience
  *
- * @ORM\Table(name="experiences")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ExperiencesRepository")
+ * @ORM\Table(name="experience")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ExperienceRepository")
  */
 class Experience
 {
@@ -45,9 +45,32 @@ class Experience
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text")
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="isEdu", type="boolean")
+     */
+    private $isEdu;
+
+    /**
+     * @return bool
+     */
+    public function isEdu()
+    {
+        return $this->isEdu;
+    }
+
+    /**
+     * @param bool $isEdu
+     */
+    public function setIsEdu($isEdu)
+    {
+        $this->isEdu = $isEdu;
+    }
 
 
     /**
