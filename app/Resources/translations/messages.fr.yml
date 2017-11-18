@@ -60,7 +60,7 @@ resume:
         desc: Stage de 3 mois effectué au Canada. Aide apportée à un doctorant sur son projet de recherche. Optimisation de l'application permettant de recréer une pièce préalablement scannée dans le casque de réalité virtuelle.
     symfony:
         title: Création de site web avec Symfony
-        desc: Développement et maintenance de différents sites web de façon professionnelle.
+        desc: Développement de différents sites web de façon professionnelle. Création et maintenance d'un site de type blog dans le cadre familiale.
 
 portfolio:
     title: Portfolio
