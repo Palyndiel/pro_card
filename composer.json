@@ -33,7 +33,9 @@
         "twig/twig": "@stable",
         "friendsofsymfony/jsrouting-bundle": "@stable",
         "sonata-project/admin-bundle": "3.x-dev",
-        "sonata-project/doctrine-orm-admin-bundle": "3.x-dev"
+        "sonata-project/doctrine-orm-admin-bundle": "3.x-dev",
+        "friendsofsymfony/user-bundle": "2.0.*",
+        "sonata-project/easy-extends-bundle": "2.2.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",
