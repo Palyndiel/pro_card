@@ -10,6 +10,6 @@ $container->setParameter('database_password', $db['pass']);
 $container->setParameter('secret', getenv('SECRET'));
 $container->setParameter('locale', 'en');
 $container->setParameter('mailer_transport', null);
-$container->setParameter('mailer_host', null);
-$container->setParameter('mailer_user', null);
+$container->setParameter('mailer_host', "127.0.0.1");
+$container->setParameter('mailer_user', "admin@mail.com");
 $container->setParameter('mailer_password', null);
