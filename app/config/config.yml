@@ -67,9 +67,6 @@ swiftmailer:
     password: '%mailer_password%'
     spool: { type: memory }
 
-hanfrey_sparkpost:
-    api_token: a13a7ef38dea42f1d9ba4170f9e246a8f8bbba06
-
 sonata_block:
     default_contexts: [cms]
     blocks:
