@@ -10,7 +10,8 @@ master:
     skill:
         java: JavaEE Developer
         php: Back-end PHP developer
-    desc: Hello, my name is Maxime Minot. I am a young graduate engineer in electronics and digital technologies. I have 6 months of experience in Java EE development and I create websites with Symfony in my spare time.
+        front: Front-end developer
+    desc: Hello, my name is Maxime Minot. I am a young graduate engineer in electronics and digital technologies. I have 6 months of experience in Java EE development and one year of experience at La Poste in Symfony site development.
 
 info:
     age: Age
@@ -36,31 +37,6 @@ resume:
     technology: Technology
     c_skills: skills
     t_skills: skills
-    polytech:
-        title: Engineer's degree in electronics and digital technologies
-        desc: Training combining electronics and IT. The areas covered range from FPGA programming to Java coding.
-    python:
-        title: Initiation to Python
-    angular:
-        title: Initiation to AngularJs
-    oc:
-         title: How to develop professional PHP websites
-         desc: Success' certificate for a course on object-oriented programming, Symfony framework and best practices.
-    alten:
-        title: Consultant
-        desc: In search of a first mission.
-    sncf:
-        title: Internship for SNCF
-        desc: Internship within the OCTOPUS team. Development and maintenance of an application in JAVA J2EE with eclipse.
-    vod:
-        title: Video on demand application on virtual reality headset
-        desc: School project in pairs. Programming a server on Raspberry Pi and a client application in Android on virtual reality headset.
-    oculus:
-        title: Virtual reality application for Oculus Rift
-        desc: A 3 month internship in Canada. Assistance to a doctoral student on his research project. Optimization of the application to recreate a previously scanned room in the virtual reality headset.
-    ymfony:
-        title: Creation of websites with Symfony
-        desc: Development and maintenance of different websites in a professional way.
 
 portfolio:
     title: Portfolio
