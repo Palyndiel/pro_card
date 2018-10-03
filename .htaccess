@@ -3,8 +3,5 @@ RewriteBase /
 
 RewriteCond %{REQUEST_URI} !^/pro_card/
 
-# Rewrites all URLS [Replace "example" with the actual domain, without the TLD (.com, .net, .biz, etc)]
-RewriteCond %{HTTP_HOST} ^(www\.)?ycr.pingfiles\.
-
 # Rewrite all those to insert /folder
 RewriteRule ^(.*)$ /pro_card/$1 [L]
