@@ -67,3 +67,7 @@ form:
         error: There was an error while submitting the form. Please try again later
         robot: Robot verification failed, please try again.
         captcha: Please click on the reCAPTCHA box.
+
+notfound:
+    home: Go To Homepage
+    message: The page you are looking for might have been removed had its name changed or is temporarily unavailable.

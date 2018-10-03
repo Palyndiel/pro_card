@@ -67,3 +67,7 @@ form:
         error: Il y a eu un problème lors de l'envoi du mail. Merci de retenter plus tard.
         robot: La vérification a échoué. Merci de réessayer.
         captcha: Merci de cliquer sur le CAPATCHA.
+
+notfound:
+    home: Aller à l'accueil
+    message: La page que vous recherchez a peut-être été supprimée, son nom modifié ou est temporairement indisponible.

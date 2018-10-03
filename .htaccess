@@ -1,7 +1,5 @@
-RewriteEngine on
-RewriteBase /
-
-RewriteCond %{REQUEST_URI} !^/pro_card/
-
-# Rewrite all those to insert /folder
-RewriteRule ^(.*)$ /pro_card/$1 [L]
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ web/$1 [QSA,L]
+</IfModule>
