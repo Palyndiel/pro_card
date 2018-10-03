@@ -17,10 +17,10 @@
                                 {% for experience in listExperiences %}
                                     {% if experience.isEdu %}
                                         <div class="timeline-item">
-                                            <h4 class="item-title">{{ experience.title }}</h4>
+                                            <h4 class="item-title">{{ experience.titleFR }}</h4>
                                             <span class="item-period">{{ experience.length }}</span>
                                             <span class="item-small">{{ experience.company }}</span>
-                                            <p class="item-description">{{ experience.description }}</p>
+                                            <p class="item-description">{{ experience.descriptionFR }}</p>
                                         </div>
                                     {% endif %}
                                 {% endfor %}
@@ -38,10 +38,10 @@
                                 {% for experience in listExperiences %}
                                     {% if not experience.isEdu %}
                                         <div class="timeline-item">
-                                            <h4 class="item-title">{{ experience.title }}</h4>
+                                            <h4 class="item-title">{{ experience.titleFR }}</h4>
                                             <span class="item-period">{{ experience.length }}</span>
                                             <span class="item-small">{{ experience.company }}</span>
-                                            <p class="item-description">{{ experience.description }}</p>
+                                            <p class="item-description">{{ experience.descriptionFR }}</p>
                                         </div>
                                     {% endif %}
                                 {% endfor %}
