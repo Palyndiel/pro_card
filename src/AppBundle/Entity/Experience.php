@@ -24,9 +24,16 @@ class Experience
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255, unique=true)
+     * @ORM\Column(name="title_fr", type="string", length=255, unique=true)
      */
-    private $title;
+    private $title_fr;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title_eng", type="string", length=255, unique=true)
+     */
+    private $title_eng;
 
     /**
      * @var string
@@ -45,9 +52,16 @@ class Experience
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text", nullable=true)
+     * @ORM\Column(name="description_fr", type="text", nullable=true)
      */
-    private $description;
+    private $description_fr;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description_eng", type="text", nullable=true)
+     */
+    private $description_eng;
 
     /**
      * @var boolean
@@ -55,6 +69,13 @@ class Experience
      * @ORM\Column(name="isEdu", type="boolean")
      */
     private $isEdu;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="order", type="integer")
+     */
+    private $order;
 
     /**
      * @return bool
@@ -81,30 +102,6 @@ class Experience
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set title
-     *
-     * @param string $title
-     *
-     * @return Experience
-     */
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
-    }
-
-    /**
-     * Get title
-     *
-     * @return string
-     */
-    public function getTitle()
-    {
-        return $this->title;
     }
 
     /**
@@ -156,27 +153,84 @@ class Experience
     }
 
     /**
-     * Set description
-     *
-     * @param string $description
-     *
-     * @return Experience
+     * @return string
      */
-    public function setDescription($description)
+    public function getTitleFr()
     {
-        $this->description = $description;
-
-        return $this;
+        return $this->title_fr;
     }
 
     /**
-     * Get description
-     *
+     * @param string $title_fr
+     */
+    public function setTitleFr($title_fr)
+    {
+        $this->title_fr = $title_fr;
+    }
+
+    /**
      * @return string
      */
-    public function getDescription()
+    public function getTitleEng()
     {
-        return $this->description;
+        return $this->title_eng;
     }
+
+    /**
+     * @param string $title_eng
+     */
+    public function setTitleEng($title_eng)
+    {
+        $this->title_eng = $title_eng;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescriptionFr()
+    {
+        return $this->description_fr;
+    }
+
+    /**
+     * @param string $description_fr
+     */
+    public function setDescriptionFr($description_fr)
+    {
+        $this->description_fr = $description_fr;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescriptionEng()
+    {
+        return $this->description_eng;
+    }
+
+    /**
+     * @param string $description_eng
+     */
+    public function setDescriptionEng($description_eng)
+    {
+        $this->description_eng = $description_eng;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrder()
+    {
+        return $this->order;
+    }
+
+    /**
+     * @param int $order
+     */
+    public function setOrder($order)
+    {
+        $this->order = $order;
+    }
+
 }
 

@@ -43,6 +43,13 @@ class Skill
     private $isTech;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="order", type="integer")
+     */
+    private $order;
+
+    /**
      * @return bool
      */
     public function isTech()
@@ -115,6 +122,22 @@ class Skill
     public function getLevel()
     {
         return $this->level;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOrder()
+    {
+        return $this->order;
+    }
+
+    /**
+     * @param int $order
+     */
+    public function setOrder($order)
+    {
+        $this->order = $order;
     }
 }
 
