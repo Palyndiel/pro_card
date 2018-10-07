@@ -23,6 +23,7 @@ class AppKernel extends Kernel
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new Gintko\Swiftmailer\SparkpostBundle\GintkoSwiftmailerSparkpostBundle(),
             new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle()
         ];
 

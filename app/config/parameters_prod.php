@@ -14,3 +14,4 @@ $container->setParameter('mailer_host', "smtp.sparkpostmail.com");
 $container->setParameter('mailer_port', 587);
 $container->setParameter('mailer_user', "SMTP_Injection");
 $container->setParameter('mailer_password', "a13a7ef38dea42f1d9ba4170f9e246a8f8bbba06");
+$container->setParameter('sparkpost_api', getenv('SPARKPOST_API_KEY'));

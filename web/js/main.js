@@ -272,12 +272,6 @@
                     $(this).parent('.form-group').removeClass('form-group-focus');
                 }
             });
-
-        //Google Maps
-        $("#map").googleMap();
-        $("#map").addMarker({
-            address: "1 avenue Abel Gance 44300 Nantes" // Your Address
-        });
     });
 
 })(jQuery);

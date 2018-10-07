@@ -73,13 +73,15 @@ class CoreController extends Controller
                         }
                     }
 
-                    $headers = array('Content-Type: text/html; charset="UTF-8";',
-                        'From: ' . $from,
-                        'Reply-To: ' . $from,
-                        'Return-Path: ' . $from,
-                    );
+                    $mailer = $this->get('mailer');
 
-                    mail($sendTo, $subject, $emailText, implode("\n", $headers));
+                    $message = $mailer->createMessage()
+                        ->setSubject($subject)
+                        ->setFrom($from)
+                        ->setTo($sendTo)
+                        ->setBody($emailText);
+
+                    $mailer->send($message);
 
                     $responseArray = array('type' => 'success', 'message' => $okMessage);
                 }

@@ -10,3 +10,4 @@ parameters:
     mailer_user: admin@mail.com
     mailer_password: null
     secret: ThisTokenIsNotSoSecretChangeIt
+    sparkpost_api: 9428874a6e7a67b7b5a39f207f28230e9b6cac9a
