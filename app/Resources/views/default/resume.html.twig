@@ -17,10 +17,20 @@
                                 {% for experience in listExperiences %}
                                     {% if experience.isEdu %}
                                         <div class="timeline-item">
+                                        {% if app.request.locale == 'fr' %}
                                             <h4 class="item-title">{{ experience.titleFR }}</h4>
+                                        {% endif %}
+                                        {% if app.request.locale == 'en' %}
+                                            <h4 class="item-title">{{ experience.titleENG }}</h4>
+                                        {% endif %}
                                             <span class="item-period">{{ experience.length }}</span>
                                             <span class="item-small">{{ experience.company }}</span>
-                                            <p class="item-description">{{ experience.descriptionFR }}</p>
+                                        {% if app.request.locale == 'fr' %}
+                                            <h4 class="item-description">{{ experience.descriptionFR }}</h4>
+                                        {% endif %}
+                                        {% if app.request.locale == 'en' %}
+                                            <h4 class="item-description">{{ experience.descriptionENG }}</h4>
+                                        {% endif %}
                                         </div>
                                     {% endif %}
                                 {% endfor %}
@@ -38,10 +48,20 @@
                                 {% for experience in listExperiences %}
                                     {% if not experience.isEdu %}
                                         <div class="timeline-item">
-                                            <h4 class="item-title">{{ experience.titleFR }}</h4>
+                                            {% if app.request.locale == 'fr' %}
+                                                <h4 class="item-title">{{ experience.titleFR }}</h4>
+                                            {% endif %}
+                                            {% if app.request.locale == 'en' %}
+                                                <h4 class="item-title">{{ experience.titleENG }}</h4>
+                                            {% endif %}
                                             <span class="item-period">{{ experience.length }}</span>
                                             <span class="item-small">{{ experience.company }}</span>
-                                            <p class="item-description">{{ experience.descriptionFR }}</p>
+                                            {% if app.request.locale == 'fr' %}
+                                                <h4 class="item-description">{{ experience.descriptionFR }}</h4>
+                                            {% endif %}
+                                            {% if app.request.locale == 'en' %}
+                                                <h4 class="item-description">{{ experience.descriptionENG }}</h4>
+                                            {% endif %}
                                         </div>
                                     {% endif %}
                                 {% endfor %}
