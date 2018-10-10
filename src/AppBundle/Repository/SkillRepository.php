@@ -13,6 +13,7 @@ class SkillRepository extends \Doctrine\ORM\EntityRepository
     public function findAll()
     {
         return $this->createQueryBuilder('a')
+            ->add('orderBy', 'a.order')
             ->getQuery()
             ->getResult()
             ;
