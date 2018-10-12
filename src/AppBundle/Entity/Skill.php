@@ -45,9 +45,9 @@ class Skill
     /**
      * @var int
      *
-     * @ORM\Column(name="order", type="integer")
+     * @ORM\Column(name="ordre", type="integer")
      */
-    private $order;
+    private $ordre;
 
     /**
      * @return bool
@@ -127,17 +127,17 @@ class Skill
     /**
      * @return int
      */
-    public function getOrder()
+    public function getOrdre()
     {
-        return $this->order;
+        return $this->ordre;
     }
 
     /**
-     * @param int $order
+     * @param int $ordre
      */
-    public function setOrder($order)
+    public function setOrdre($ordre)
     {
-        $this->order = $order;
+        $this->ordre = $ordre;
     }
 }
 

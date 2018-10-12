@@ -18,7 +18,7 @@ class ExperienceAdmin extends AbstractAdmin
         $formMapper->add('description_fr', 'text', array('required' => false));
         $formMapper->add('description_eng', 'text', array('required' => false));
         $formMapper->add('isEdu', 'checkbox', array('required' => false));
-        $formMapper->add('order', 'integer');
+        $formMapper->add('ordre', 'integer');
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
